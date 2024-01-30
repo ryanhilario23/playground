@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLayground</title>
+<style>
+    *{ margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    body{background-color: aquamarine;}
+    div{display: flex; justify-content: center;}
+    h1{text-align: center;}
+    main{max-width: 80%; justify-content: center;}
+    .col{flex:1;background-color: blueviolet; height: 100px; margin: 20px; border-radius: 5%; border: solid black 2px;}
+</style>
+</head>
+<body>
+    <main>
+    <h1>Welcome</h1>
+    <div>
+        {% for i in range(boxes): %}
+            <p class="col"></p>
+        {% endfor %}
+    </div>
+    </main>
+</body>
+</html>
