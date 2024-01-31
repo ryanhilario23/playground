@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLayground</title>
 <style>
-    *{ margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    *{ margin: auto; padding: 0; font-family: Arial, Helvetica, sans-serif;}
     body{background-color: aquamarine;}
-    div{display: flex; justify-content: center;}
+    div{display: flex;flex-wrap: wrap; justify-content: center;}
     h1{text-align: center;}
-    main{max-width: 80%; justify-content: center;}
-    .col{flex:1;background-color: blueviolet; height: 100px; margin: 20px; border-radius: 5%; border: solid black 2px;}
+    main{max-width: 75%; justify-content: center;}
+    .box{height: 100px; width: 100px; border-radius: 10%; border: solid black 2px; margin: 10px;}
 </style>
 </head>
 <body>
-    <main>
     <h1>Welcome</h1>
+    <main>
     <div>
-        {% for i in range(boxes): %}
-            <p class="col"></p>
+        {% for i in range(0,nums): %}
+            <p class="box" style="background-color: {{ color }};"></p>
         {% endfor %}
     </div>
     </main>
